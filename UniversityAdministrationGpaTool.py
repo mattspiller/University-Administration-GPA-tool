@@ -31,10 +31,10 @@ while another_student != "no":
 
     another_student = ""
 
-    print("Please enter Student's GPA: ")
+    print("Please enter Student's GPA: ", end='')
     gpa = float(input())
 
-    print("Please enter Program Threshold: ")
+    print("Please enter Program Threshold: ", end='')
     threshold = float(input())
 
     is_student_on_deans_list(gpa)
@@ -42,7 +42,7 @@ while another_student != "no":
     does_student_receive_academic_warning(gpa, threshold)
 
     while another_student != "no" and another_student != "yes":
-        print("Would you like to assess another student (yes, no): ")
+        print("Would you like to assess another student (yes, no): ", end='')
         another_student = input()
 
         if another_student == "yes":
